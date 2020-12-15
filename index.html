@@ -15,42 +15,109 @@
     
 </head>
 
-<body>
+<body style="font-size: 20px;">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./">Weblab 6</a>
+          <a class="navbar-brand" href="#">Weblab 6</a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="navbar-collapse collapse" id="navbarID">
             <ul class="navbar-nav me-auto mb-2 mb-md-0 mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#wtRFC">RFC</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#examples">Примеры</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownID" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownID">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownID" data-bs-toggle="dropdown" aria-expanded="false">Доп. Bootstrap</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="dropdownID">
+                  <li><a class="dropdown-item" href="#">Слайдер</a></li>
+                  <li><a class="dropdown-item" href="#">Форма</a></li>
+                  <li><a class="dropdown-item" href="#">Модальное окно</a></li>
                 </ul>
               </li>
             </ul>
             <div class="navbar-nav">
-                <a href="" class="nav-link">Test</a>
+                <a href="http://bouhartsev.std-1374.ist.mospolytech.ru/" class="nav-link">Все лабы</a>
             </div>
           </div>
         </div>
     </nav>
-    <main>
-        <p></p>
+    <main class="p-5">
+        <h1>RFC и стандартизация</h1>
+        <article id="wtRFC" class="pt-5">
+            <h2 class="mt-2">Что такое RFC?</h2>
+            <p><strong>Request for Comments</strong>, RFC (“тема для обсуждения”, “запрос на отзывы”, “рабочее предложение”) — <em>документ</em> из серии пронумерованных информационных документов Интернета, содержащих технические спецификации и стандарты, широко применяемые во всемирной сети. В настоящее время первичной публикацией документов RFC занимается IETF под эгидой открытой организации "Общество Интернета" (англ. Internet Society, ISOC).</p>
+            <p>Несмотря на название, запросы на отзывы RFC сейчас рассматриваются как стандарты Интернета (а рабочие версии стандартов обычно называют драфтами, от англ. draft — проект). Согласно RFC 2026, жизненный цикл стандарта выглядит следующим образом:</p>
+            <ol>
+               <li>Выносится на всеобщее рассмотрение интернет-проект (Internet Draft). Проекты не имеют официального статуса и удаляются из базы через шесть месяцев после последнего изменения.</li>
+               <li>Если проект стандарта оказывается достаточно удачным и непротиворечивым, он получает статус предложенного стандарта (Proposed Standard), и свой номер RFC.</li>
+               <li>Следующая стадия — проект стандарта (Draft Standard) — означает, что предложенный стандарт принят сообществом, в частности, существуют две независимые по коду совместимые реализации разных команд разработчиков.</li>
+               <li>Высший уровень — стандарт Интернета (Internet Standard). Это спецификации с большим успешным опытом применения и зрелой формулировкой. Параллельно с нумерацией RFC они имеют свою собственную нумерацию STD.</li>
+            </ol>
+        </article>
+        <article id="examples" class="pt-5">
+            <h2 class="mt-2">Примеры популярных RFC</h2>
+            <table class="table table-bordered">
+                <tr>
+                    <td>RFC 791</td>
+                    <td>IP</td>
+                </tr>
+                <tr>
+                    <td>RFC 793</td>
+                    <td>TCP</td>
+                </tr>
+                <tr>
+                    <td>RFC 959</td>
+                    <td>FTP</td>
+                </tr>
+                <tr>
+                    <td>RFC 1034</td>
+                    <td>DNS — концепция</td>
+                </tr>
+                <tr>
+                    <td>RFC 1035</td>
+                    <td>DNS — внедрение</td>
+                </tr>
+                <tr>
+                    <td>RFC 1591</td>
+                    <td>Структура доменных имен</td>
+                </tr>
+                <tr>
+                    <td>RFC 1738</td>
+                    <td>URL</td>
+                </tr>
+                <tr>
+                    <td>RFC 2231</td>
+                    <td>Кодировка символов</td>
+                </tr>
+                <tr>
+                    <td>RFC 2616</td>
+                    <td>HTTP</td>
+                </tr>
+                <tr>
+                    <td>RFC 2822</td>
+                    <td>Формат электронной почты</td>
+                </tr>
+            </table>
+        </article>
+        
+        
+<!--
+        Слайдер + фигура
+        Футер
+-->
+        <h3>Источники:</h3>
+        <ul class="list-unstyled p-3">
+            <li><a href="https://ru.wikipedia.org/wiki/RFC">https://ru.wikipedia.org/wiki/RFC</a></li>
+            <li><a href="https://studfile.net/preview/6303452/#6">https://studfile.net/preview/6303452/#6</a></li>
+            <li><a href="https://bootswatch.com/cyborg/">https://bootswatch.com/cyborg/</a></li>
+            <li><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
+        </ul>
+        
     </main>
     <footer></footer>
 </body>

@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">-->
-    <link href="./bootstrap.min.css" rel="stylesheet">
-	
-    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="./src/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="shortcut icon" href="./src/favicon.ico">
     
 </head>
 
@@ -36,7 +36,7 @@
                 <ul class="dropdown-menu w-100" aria-labelledby="dropdownID">
                   <li><a class="dropdown-item" href="#slider">Слайдер</a></li>
                   <li><a class="dropdown-item" href="#form">Форма</a></li>
-                  <li><a class="dropdown-item" href="#modalWindow">Модальное окно</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalWindow">Модальное окно</a></li>
                 </ul>
               </li>
             </ul>
@@ -104,7 +104,6 @@
                 </tr>
             </table>
         </article>
-        
         <section id="slider" class="pt-5">
         	<h2 class="mt-2">Слайдер</h2>
 			<div id="myCarousel" class="carousel slide w-100 mx-auto" data-ride="carousel">
@@ -137,22 +136,65 @@
 			  </a>
 			</div>
         </section>
-
-<!--
-        Футер
--->
-        <h3>Источники:</h3>
-        <ul class="list-unstyled p-3">
-            <li><a href="https://ru.wikipedia.org/wiki/RFC">https://ru.wikipedia.org/wiki/RFC</a></li>
-            <li><a href="https://studfile.net/preview/6303452/#6">https://studfile.net/preview/6303452/#6</a></li>
-            <li><a href="https://bootswatch.com/cyborg/">https://bootswatch.com/cyborg/</a></li>
-            <li><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
-        </ul>
+        <form id="form" class="pt-5 w-50">
+        	<h2 class="mt-2">Форма регистрации</h2>
+        	<div class="form-group">
+			  <label for="emailInput">Email address</label>
+			  <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Type your e-mail" required>
+			  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+			  <label for="passwordInput1">Password</label>
+			  <input type="password" class="form-control" id="passwordInput1" placeholder="Create password" required>
+			</div>
+       		<div class="form-group">
+			  <label for="passwordInput2">Password again</label>
+			  <input type="password" class="form-control" id="passwordInput2" placeholder="Repeat your password" required>
+			</div>
+     		<div class="pt-4">
+				<button type="reset" class="btn btn-secondary">Reset</button>
+				<button type="submit" class="btn btn-primary">Submit</button>
+       		</div>
+        </form>
+        
+        <button type="button" class="btn btn-outline-warning btn-lg d-block mx-auto mt-5" data-bs-toggle="modal" data-bs-target="#modalWindow">Модальное окно</button>
+		<!-- Modal -->
+		<div class="modal fade" id="modalWindow" tabindex="-1" aria-labelledby="modalWindowLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="modalWindowLabel">Модальное окно</h5>
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				Хотите перейти на сайт <a href="https://bouhartsev.site/">bouhartsev.site</a>?
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+				<a href="https://bouhartsev.site/" class="btn btn-primary">Перейти на сайт</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+        
+        <section id="sources" class="pt-5">
+			<h3 class="mt-2">Источники:</h3>
+			<ul class="list-unstyled p-3">
+				<li><a href="https://ru.wikipedia.org/wiki/RFC">https://ru.wikipedia.org/wiki/RFC</a></li>
+				<li><a href="https://studfile.net/preview/6303452/#6">https://studfile.net/preview/6303452/#6</a></li>
+				<li><a href="https://bootswatch.com/cyborg/">https://bootswatch.com/cyborg/</a></li>
+				<li><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
+			</ul>
+		</section>
     </main>
-    <footer>Test</footer>
-    
+    <footer class="text-center pb-5">Matvey Bouhartsev © 2020</footer>
+   
+	<!--    scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
 </html>
